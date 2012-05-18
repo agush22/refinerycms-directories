@@ -1,0 +1,41 @@
+<ul>
+  <% if ::Refinery::Directory::Admin::ContactsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.directory_admin_contacts_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_directory_admin_contact_path,
+                 :class => "add_icon" %>
+  </li>
+
+<ul class='collapsible_menu'>
+    <li class='not_a_link'>
+      <%= link_to t('.categories.title'), '#',
+                  :class => 'folder_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.categories.manage'), refinery.directory_admin_categories_path,
+                  :class => 'folder_edit_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.categories.new'), refinery.new_directory_admin_category_path,
+                  :class => 'folder_add_icon' %>
+    </li>
+</ul>
+
+<% if !searching? && ::Refinery::Directory::Admin::ContactsController.sortable? && ::Refinery::Directory::Contact.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Contacts"),
+                 refinery.directory_admin_contacts_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Contacts"),
+                 refinery.directory_admin_contacts_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

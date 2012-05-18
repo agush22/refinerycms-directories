@@ -7,6 +7,14 @@ es:
         title: Contactos
     directory:
       admin:
+        submenu:
+          create_new: Crear nuevo contacto
+          reorder: Reordenar Contactos
+          reorder_done: Reordenación de Contactos completada
+          categories:
+            title: Categorias
+            manage: Administrar
+            new: Crear Nueva Categoria
         categories:
           actions:
             create_new: Crear nueva categoria

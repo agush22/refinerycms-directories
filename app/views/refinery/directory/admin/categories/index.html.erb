@@ -2,6 +2,6 @@
   <%= render 'records' %>
 </section>
 <aside id='actions'>
-  <%= render 'actions' %>
+  <%= render 'refinery/directory/admin/submenu' %>
 </aside>
 <%= render '/refinery/admin/make_sortable', :tree => false if !searching? and ::Refinery::Directory::Admin::CategoriesController.sortable? and ::Refinery::Directory::Category.count > 1 %>
