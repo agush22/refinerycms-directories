@@ -15,7 +15,7 @@ module Refinery
             :class_name => :'refinery/directory/contact',
             :title => 'name'
           }
-          plugin.menu_match = %r{refinery/directory/contacts(/.*)?$}
+          plugin.menu_match = %r{refinery/directory/(categories|contacts)(/.*)?$}
         end
       end
 

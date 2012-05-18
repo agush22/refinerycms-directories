@@ -14,7 +14,7 @@ module Refinery
           plugin.activity = {
             :class_name => :'refinery/directory/category'
           }
-          plugin.menu_match = %r{refinery/directory/categories(/.*)?$}
+          plugin.menu_match = %r{refinery/directory/(categories|contacts)(/.*)?$}
           plugin.hide_from_menu = true
         end
       end
