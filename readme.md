@@ -1,10 +1,14 @@
-# Directory extension for Refinery CMS.
+# Directories extension for Refinery CMS.
 
-## How to build this extension as a gem
+## How install: 
 
-    cd vendor/extensions/directory
-    gem build refinerycms-directory.gemspec
-    gem install refinerycms-directory.gem
+#Add to your Gemfile:
+    gem 'refinerycms-directories', :git => 'git://github.com/agush22/refinerycms-directories.git'
+    
+#Run
+    bundle install
+    rails generate refinery:directories
+    rake db:migrate
+    rake db:seed
 
-    # Sign up for a http://rubygems.org/ account and publish the gem
-    gem push refinerycms-directory.gem
+#Enjoy
