@@ -1,0 +1,62 @@
+fr:
+  refinery:
+    plugins:
+      categories:
+        title: Categories
+      contacts:
+        title: Contacts
+    directory:
+      admin:
+        categories:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Category
+            reorder: Réordonner les Categories
+            reorder_done: Fin de réordonnancement des Categories
+          records:
+            title: Categories
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Category. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Category" pour créer votre premi(er/ère) category.
+          category:
+            view_live_html: Voir ce(t/tte) category <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) category
+            delete: Supprimer définitivement ce(t/tte) category
+        contacts:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Contact
+            reorder: Réordonner les Contacts
+            reorder_done: Fin de réordonnancement des Contacts
+          records:
+            title: Contacts
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Contact. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Contact" pour créer votre premi(er/ère) contact.
+          contact:
+            view_live_html: Voir ce(t/tte) contact <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) contact
+            delete: Supprimer définitivement ce(t/tte) contact
+      categories:
+        show:
+          other: Autres Categories
+      contacts:
+        show:
+          other: Autres Contacts
+  activerecord:
+    attributes:
+      refinery/directory/category:
+        title: Title
+      refinery/directory/contact:
+        name: Name
+        city: City
+        state: State
+        zip_code: Zip Code
+        address: Address
+        logo: Logo
+        phone: Phone
+        email: Email
+        contact: Contact
+        info: Info
+        abstract: Abstract
+        web: Web
+        facebook: Facebook
+        twitter: Twitter

@@ -1,0 +1,105 @@
+<% content_for :body_content_title do %>
+  <%= @contact.name %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @contact.name %>
+    </p>
+  </section>
+  <section>
+    <h1>City</h1>
+    <p>
+      <%=raw @contact.city %>
+    </p>
+  </section>
+  <section>
+    <h1>State</h1>
+    <p>
+      <%=raw @contact.state %>
+    </p>
+  </section>
+  <section>
+    <h1>Zip Code</h1>
+    <p>
+      <%=raw @contact.zip_code %>
+    </p>
+  </section>
+  <section>
+    <h1>Address</h1>
+    <p>
+      <%=raw @contact.address %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @contact.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone</h1>
+    <p>
+      <%=raw @contact.phone %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @contact.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Contact</h1>
+    <p>
+      <%=raw @contact.contact %>
+    </p>
+  </section>
+  <section>
+    <h1>Info</h1>
+    <p>
+      <%=raw @contact.info %>
+    </p>
+  </section>
+  <section>
+    <h1>Abstract</h1>
+    <p>
+      <%=raw @contact.abstract %>
+    </p>
+  </section>
+  <section>
+    <h1>Web</h1>
+    <p>
+      <%=raw @contact.web %>
+    </p>
+  </section>
+  <section>
+    <h1>Facebook</h1>
+    <p>
+      <%=raw @contact.facebook %>
+    </p>
+  </section>
+  <section>
+    <h1>Twitter</h1>
+    <p>
+      <%=raw @contact.twitter %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="contacts">
+      <% @contacts.each do |contact| %>
+        <li>
+          <%= link_to contact.name, refinery.directory_contact_path(contact) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

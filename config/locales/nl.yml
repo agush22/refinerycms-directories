@@ -1,0 +1,64 @@
+nl:
+  refinery:
+    plugins:
+      categories:
+        title: Categories
+      contacts:
+        title: Contacts
+    directory:
+      admin:
+        categories:
+          actions:
+            create_new: Maak een nieuwe Category
+            reorder: Wijzig de volgorde van de Categories
+            reorder_done: Klaar met het wijzingen van de volgorde van de Categories
+          records:
+            title: Categories
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Categories. Druk op 'Maak een nieuwe Category'
+              om de eerste aan te maken.
+          category:
+            view_live_html: Bekijk deze category op de website <br/><em>(opent een
+              nieuw venster)</em>
+            edit: Bewerk deze category
+            delete: Verwijder deze category voor eeuwig
+        contacts:
+          actions:
+            create_new: Maak een nieuwe Contact
+            reorder: Wijzig de volgorde van de Contacts
+            reorder_done: Klaar met het wijzingen van de volgorde van de Contacts
+          records:
+            title: Contacts
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Contacts. Druk op 'Maak een nieuwe Contact'
+              om de eerste aan te maken.
+          contact:
+            view_live_html: Bekijk deze contact op de website <br/><em>(opent een
+              nieuw venster)</em>
+            edit: Bewerk deze contact
+            delete: Verwijder deze contact voor eeuwig
+      categories:
+        show:
+          other: Andere Categories
+      contacts:
+        show:
+          other: Andere Contacts
+  activerecord:
+    attributes:
+      refinery/directory/category:
+        title: Title
+      refinery/directory/contact:
+        name: Name
+        city: City
+        state: State
+        zip_code: Zip Code
+        address: Address
+        logo: Logo
+        phone: Phone
+        email: Email
+        contact: Contact
+        info: Info
+        abstract: Abstract
+        web: Web
+        facebook: Facebook
+        twitter: Twitter

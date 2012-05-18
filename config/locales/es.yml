@@ -1,0 +1,68 @@
+es:
+  refinery:
+    plugins:
+      categories:
+        title: Categorias
+      contacts:
+        title: Contactos
+    directory:
+      admin:
+        categories:
+          actions:
+            create_new: Crear nueva categoria
+            reorder: Reordenar Categorias
+            reorder_done: Reordenación de Categorias completada
+          records:
+            title: Categorias
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay categorias todavia. Pulsa en "Crear nueva categoria"
+              para crear tu primer categoria.
+          category:
+            view_live_html: Ver este categoria como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar esta categoria
+            delete: Borrar esta categoria para siempre
+        contacts:
+          actions:
+            create_new: Crear nuevo contacto
+            reorder: Reordenar Contactos
+            reorder_done: Reordenación de Contactos completada
+            categories:
+              title: Categorias
+              manage: Administrar
+              new: Crear Nueva Categoria
+          records:
+            title: Contactos
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay Contactos todavía. Pulsa en "Crear nuevo Contacto"
+              para crear tu primer contacto.
+          contact:
+            view_live_html: Ver este contact como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este contact
+            delete: Borrar este contact para siempre
+      categories:
+        show:
+          other: Otras Categorias
+      contacts:
+        show:
+          other: Otros Contactos
+  activerecord:
+    attributes:
+      refinery/directory/category:
+        title: Title
+      refinery/directory/contact:
+        name: Name
+        city: City
+        state: State
+        zip_code: Zip Code
+        address: Address
+        logo: Logo
+        phone: Phone
+        email: Email
+        contact: Contact
+        info: Info
+        abstract: Abstract
+        web: Web
+        facebook: Facebook
+        twitter: Twitter

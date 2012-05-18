@@ -1,0 +1,64 @@
+nb:
+  refinery:
+    plugins:
+      categories:
+        title: Categories
+      contacts:
+        title: Contacts
+    directory:
+      admin:
+        categories:
+          actions:
+            create_new: Lag en ny Category
+            reorder: Endre rekkefølgen på Categories
+            reorder_done: Ferdig å endre rekkefølgen Categories
+          records:
+            title: Categories
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Categories enda. Klikk på "Lag en ny Category"
+              for å legge til din første category.
+          category:
+            view_live_html: Vis hvordan denne category ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne category
+            delete: Fjern denne category permanent
+        contacts:
+          actions:
+            create_new: Lag en ny Contact
+            reorder: Endre rekkefølgen på Contacts
+            reorder_done: Ferdig å endre rekkefølgen Contacts
+          records:
+            title: Contacts
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Contacts enda. Klikk på "Lag en ny Contact"
+              for å legge til din første contact.
+          contact:
+            view_live_html: Vis hvordan denne contact ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne contact
+            delete: Fjern denne contact permanent
+      categories:
+        show:
+          other: Andre Categories
+      contacts:
+        show:
+          other: Andre Contacts
+  activerecord:
+    attributes:
+      refinery/directory/category:
+        title: Title
+      refinery/directory/contact:
+        name: Name
+        city: City
+        state: State
+        zip_code: Zip Code
+        address: Address
+        logo: Logo
+        phone: Phone
+        email: Email
+        contact: Contact
+        info: Info
+        abstract: Abstract
+        web: Web
+        facebook: Facebook
+        twitter: Twitter

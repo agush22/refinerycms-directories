@@ -1,0 +1,66 @@
+en:
+  refinery:
+    plugins:
+      categories:
+        title: Categories
+      contacts:
+        title: Contacts
+    directory:
+      admin:
+        categories:
+          actions:
+            create_new: Add New Category
+            reorder: Reorder Categories
+            reorder_done: Done Reordering Categories
+          records:
+            title: Categories
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Categories yet. Click "Add New Category" to
+              add your first category.
+          category:
+            view_live_html: View this category live <br/><em>(opens in a new window)</em>
+            edit: Edit this category
+            delete: Remove this category forever
+        contacts:
+          actions:
+            create_new: Add New Contact
+            reorder: Reorder Contacts
+            reorder_done: Done Reordering Contacts
+            categories:
+              title: Categories
+              manage: Manage
+              new: Create New Category
+          records:
+            title: Contacts
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Contacts yet. Click "Add New Contact" to add
+              your first contact.
+          contact:
+            view_live_html: View this contact live <br/><em>(opens in a new window)</em>
+            edit: Edit this contact
+            delete: Remove this contact forever
+      categories:
+        show:
+          other: Other Categories
+      contacts:
+        show:
+          other: Other Contacts
+  activerecord:
+    attributes:
+      refinery/directory/category:
+        title: Title
+      refinery/directory/contact:
+        name: Name
+        city: City
+        state: State
+        zip_code: Zip Code
+        address: Address
+        logo: Logo
+        phone: Phone
+        email: Email
+        contact: Contact
+        info: Info
+        abstract: Abstract
+        web: Web
+        facebook: Facebook
+        twitter: Twitter
