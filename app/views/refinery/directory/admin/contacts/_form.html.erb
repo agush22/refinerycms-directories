@@ -3,37 +3,41 @@
               :object => @contact,
               :include_object_name => true %>
 
-  
+
   <div class='field'>
     <%= f.label :name -%>
     <%= f.text_field :name, :class => 'larger widest'  -%>
-
   </div>
-  
+
+  <div class="field">
+    <%= f.label :category -%>
+    <%= f.select(:category_id, Refinery::Directory::Category.all.collect {|c| [ c.title, c.id ] })%>
+  </div>
+
   <div class='field'>
     <%= f.label :city -%>
     <%= f.text_field :city  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :state -%>
     <%= f.text_field :state  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :zip_code -%>
     <%= f.text_field :zip_code  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :address -%>
     <%= f.text_field :address  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :logo -%>
     <%= render '/refinery/admin/image_picker',
@@ -43,25 +47,25 @@
                :toggle_image_display => false %>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :phone -%>
     <%= f.text_field :phone  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :email -%>
     <%= f.text_field :email  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :contact -%>
     <%= f.text_field :contact  -%>
 
   </div>
-  
+
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>
@@ -81,31 +85,31 @@
     </div>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :abstract -%>
-    <%= f.text_field :abstract  -%>
+    <%= f.text_area :abstract  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :web -%>
     <%= f.text_field :web  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :facebook -%>
     <%= f.text_field :facebook  -%>
 
   </div>
-  
+
   <div class='field'>
     <%= f.label :twitter -%>
     <%= f.text_field :twitter  -%>
 
   </div>
-  
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.contacts.admin.contacts.contact'),
