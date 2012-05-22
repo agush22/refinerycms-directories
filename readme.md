@@ -3,7 +3,7 @@
 ## How install: 
 
 #Add to your Gemfile:
-    gem 'refinerycms-directories', :git => 'git://github.com/agush22/refinerycms-directories.git'
+    gem 'refinerycms-directory', :git => 'git://github.com/agush22/refinerycms-directories.git'
     
 #Run
     bundle install
