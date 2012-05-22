@@ -3,11 +3,11 @@
 ## How install: 
 
 #Add to your Gemfile:
-    gem 'refinerycms-directories', :git => 'git://github.com/agush22/refinerycms-directories.git'
+    gem 'refinerycms-directory', :git => 'git://github.com/agush22/refinerycms-directories.git'
     
 #Run
     bundle install
-    rails generate refinery:directories
+    rails generate refinery:directory
     rake db:migrate
     rake db:seed
 
