@@ -9,6 +9,7 @@ module Refinery
       validates :name, :presence => true, :uniqueness => true
 
       belongs_to :logo, :class_name => '::Refinery::Image'
+      belongs_to :category
     end
   end
 end

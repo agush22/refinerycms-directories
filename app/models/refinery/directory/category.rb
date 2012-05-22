@@ -7,6 +7,8 @@ module Refinery
       acts_as_indexed :fields => [:title]
 
       validates :title, :presence => true, :uniqueness => true
+
+      has_many :contacts
     end
   end
 end
