@@ -11,7 +11,8 @@ Gem::Specification.new do |s|
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
   s.author            = 'Innku'
   # Runtime dependencies
-  s.add_dependency             'refinerycms-core',    '~> 2.0.4'
+  s.add_dependency    'refinerycms-core', '~> 2.0.4'
+  s.add_dependency    'acts-as-taggable-on'
   s.email             = 'webmaster@innku.com'
   # Development dependencies (usually used for testing)
   s.add_development_dependency 'refinerycms-testing', '~> 2.0.4'

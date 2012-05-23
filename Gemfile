@@ -2,7 +2,7 @@ source "http://rubygems.org"
 
 gemspec
 
-gem 'refinerycms', '~> 2.0.3'
+gem 'refinerycms', '~> 2.0.4'
 
 # Database Configuration
 platforms :jruby do
