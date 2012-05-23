@@ -1,7 +1,7 @@
 <% content_for :body_content_left do %>
   <ul id="contacts">
-    <%contacts = @category.contacts%>
-    <% contacts.each do |contact| %>
+
+    <% @contacts.each do |contact| %>
       <li>
         <%= link_to contact.name, refinery.directory_contact_path(contact) %>
       <br>
