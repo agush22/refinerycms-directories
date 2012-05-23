@@ -6,9 +6,11 @@ module Refinery
     extend FriendlyId
     friendly_id :name, :use => [:slugged]
 
-    attr_accessible :name, :position, :category_id, :city, :state, :zip_code, :address, :logo_id, :phone, :email, :contact, :info, :abstract, :web, :facebook, :twitter
+    attr_accessible :name, :position, :category_id, :city, :state, :zip_code, :address
+    attr_accessible :logo_id, :phone, :email, :contact, :info, :abstract, :web, :facebook
+    attr_accessible :twitter, :tag_list
 
-    acts_as_indexed :fields => [:name, :city, :state, :zip_code, :address, :phone, :email, :contact, :info, :abstract, :web, :facebook, :twitter]
+    acts_as_indexed :fields => [:name]
 
     validates :name, :presence => true, :uniqueness => true
 

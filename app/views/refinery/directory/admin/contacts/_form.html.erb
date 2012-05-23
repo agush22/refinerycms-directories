@@ -107,7 +107,11 @@
   <div class='field'>
     <%= f.label :twitter -%>
     <%= f.text_field :twitter  -%>
+  </div>
 
+  <div class='field'>
+    <%= f.label :tag_list -%>
+    <%= f.text_field :tag_list, :class => 'larger' -%>
   </div>
 
   <%= render '/refinery/admin/form_actions', :f => f,
