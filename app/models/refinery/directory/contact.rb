@@ -1,6 +1,8 @@
 module Refinery
   module Directory
     class Contact < Refinery::Core::BaseModel
+    extend FriendlyId
+      friendly_id :name, :use => [:slugged]
 
       attr_accessible :name, :position, :category_id, :city, :state, :zip_code, :address, :logo_id, :phone, :email, :contact, :info, :abstract, :web, :facebook, :twitter
 

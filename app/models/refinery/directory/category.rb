@@ -1,6 +1,8 @@
 module Refinery
   module Directory
     class Category < Refinery::Core::BaseModel
+    extend FriendlyId
+      friendly_id :title, :use => [:slugged]
 
       attr_accessible :title, :position
 
