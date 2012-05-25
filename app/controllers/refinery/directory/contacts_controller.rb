@@ -22,7 +22,7 @@ module Refinery
     protected
 
       def find_all_contacts
-        @contacts = Contact.order('position ASC')
+        @contacts = Contact.page(params[:page]).order('position ASC')
       end
 
       def find_page

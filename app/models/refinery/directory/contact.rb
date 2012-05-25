@@ -6,6 +6,8 @@ module Refinery
     extend FriendlyId
     friendly_id :name, :use => [:slugged]
 
+    self.per_page = 5
+
     attr_accessible :name, :position, :category_id, :city, :state, :zip_code, :address
     attr_accessible :logo_id, :phone, :email, :contact, :info, :abstract, :web, :facebook
     attr_accessible :twitter, :tag_list

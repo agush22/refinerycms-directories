@@ -1,6 +1,5 @@
 <% content_for :body_content_left do %>
   <ul id="contacts">
-
     <% @contacts.each do |contact| %>
       <li>
         <%= link_to contact.name, refinery.directory_contact_path(contact) %>
@@ -10,5 +9,5 @@
     <% end %>
   </ul>
 <% end %>
-
+<%= will_paginate @contacts %>
 <%= render '/refinery/content_page' %>

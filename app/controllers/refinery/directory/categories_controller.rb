@@ -13,7 +13,7 @@ module Refinery
 
       def show
         @category = Category.find(params[:id])
-        @contacts = @category.contacts
+        @contacts = @category.contacts.page(params[:page]).order('position ASC')
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @category in the line below:
         present(@page)
