@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary           = 'Directory extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
-  s.author            = ['Agustín Leñero','Maria Rosa Sanchez']
+  s.authors            = ['Agustín Leñero','Maria Rosa Sanchez']
   # Runtime dependencies
   s.add_dependency    'refinerycms-core', '~> 2.0.4'
   s.add_dependency    'acts-as-taggable-on'
