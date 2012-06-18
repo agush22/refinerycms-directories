@@ -17,7 +17,7 @@ module Refinery
     validates :name, :presence => true, :uniqueness => true
 
     belongs_to :logo, :class_name => '::Refinery::Image'
-    belongs_to :category
+    has_and_belongs_to_many :category, :uniq => true
 
     acts_as_taggable
     end

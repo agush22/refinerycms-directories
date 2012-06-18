@@ -10,7 +10,7 @@ module Refinery
 
       validates :title, :presence => true, :uniqueness => true
 
-      has_many :contacts
+      has_and_belongs_to_many :contacts, :uniq => true
     end
   end
 end
