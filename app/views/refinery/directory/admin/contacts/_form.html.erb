@@ -9,11 +9,6 @@
     <%= f.text_field :name, :class => 'larger widest'  -%>
   </div>
 
-  <div class="field">
-    <%= f.label :category -%>
-    <%= f.select(:category_id, Refinery::Directory::Category.all.collect {|c| [ c.title, c.id ] })%>
-  </div>
-
   <div class='field'>
     <%= f.label :city -%>
     <%= f.text_field :city  -%>

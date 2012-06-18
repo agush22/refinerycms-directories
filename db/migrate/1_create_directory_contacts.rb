@@ -17,7 +17,6 @@ class CreateDirectoryContacts < ActiveRecord::Migration
       t.string :facebook
       t.string :twitter
       t.integer :position
-      t.integer :category_id
       t.timestamps
     end
 
