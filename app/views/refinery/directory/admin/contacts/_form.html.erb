@@ -15,6 +15,13 @@
 
   </div>
 
+  <% for category in Refinery::Directory::Category.all %>
+    <div>
+      <%= check_box_tag "contact[category_ids][]", category.id, @contact.categories.include?(category) %>
+      <%= category.title %>
+    </div>
+  <% end %>
+
   <div class='field'>
     <%= f.label :state -%>
     <%= f.text_field :state  -%>
