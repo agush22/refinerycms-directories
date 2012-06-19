@@ -10,7 +10,7 @@ module Refinery
 
     attr_accessible :name, :position, :city, :state, :zip_code, :address
     attr_accessible :logo_id, :phone, :email, :contact, :info, :abstract, :web, :facebook
-    attr_accessible :twitter, :tag_list
+    attr_accessible :twitter, :tag_list, :category_ids
 
     acts_as_indexed :fields => [:name]
 
