@@ -15,8 +15,9 @@ module Refinery
     acts_as_indexed :fields => [:name]
 
     validates :name, :presence => true, :uniqueness => true
-
+    
     belongs_to :logo, :class_name => '::Refinery::Image'
+    belongs_to :author, :class_name => '::Refinery::User', :foreign_key => :user_id, :readonly => true
     has_and_belongs_to_many :categories
 
     acts_as_taggable
