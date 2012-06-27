@@ -119,6 +119,8 @@
     <%= f.text_field :tag_list, :class => 'larger' -%>
   </div>
 
+  <%= f.hidden_field :user_id, current_refinery_user.id %>
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.contacts.admin.contacts.contact'),
